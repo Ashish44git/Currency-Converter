@@ -51,7 +51,7 @@ const updateExchange = async () => {
   let rate = data[fromCurr.value.toLowerCase()][toCurr.value.toLowerCase()];
   let finalAmount = rate * amountValue;
 
-  msg.innerText = `${amountValue}${fromCurr.value} = ${finalAmount} ${toCurr.value}`;
+  msg.innerText = `${amountValue} ${fromCurr.value} = ${finalAmount} ${toCurr.value}`;
 };
 btn.addEventListener("click", async (evt) => {
   evt.preventDefault(); // page will not refresh after button click
